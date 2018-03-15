@@ -1,4 +1,4 @@
-const DB_NAME = 'babel'
+const DB_NAME = 'Intro'
 var mongoose = require('mongoose');
 var dbconnection = function() {
 

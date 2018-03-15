@@ -19,18 +19,4 @@ router.get('/', function(req, res){
   res.json(req.user);
 });
 
-// router.post('/', passport.authenticate('local', {
-//   failureRedirect: '/auth/fail',
-//   successRedirect: '/auth/success'
-// }));
-//
-// router.get('/fail', (req, res, next) => {
-//   console.log(req);
-//   res.json({ message: req.info.message });
-// });
-//
-// router.get('/success', (req, res, next) => {
-//   res.send(req.session.passport.user);
-// });
-
 module.exports = router;
