@@ -1,6 +1,6 @@
-# babel
+# intro
 
-> babel project
+> A Vue.js project
 
 ## Build Setup
 

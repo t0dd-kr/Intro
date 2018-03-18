@@ -1,5 +1,5 @@
 {
-  "name": "Intro",
+  "name": "intro",
   "version": "1.0.0",
   "description": "",
   "main": ".eslintrc.js",
@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^3.5.1",
-    "npm": "^5.7.1"
+    "connect-history-api-fallback": "^1.5.0"
   },
   "devDependencies": {
     "nodemon": "^1.14.11"
