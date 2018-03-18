@@ -86,7 +86,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Index',
   data () {
     return {
       msg: 'Hello Todd.'
