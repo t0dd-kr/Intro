@@ -1,7 +1,10 @@
 <template lang="html">
   <div class="yoon">
     <div class="container-id">
-      <input type="email" v-model="email" placeholder="E-mail">
+      <input class="email" type="email" v-model="email" placeholder="E-mail">
+    </div>
+    <div class="errormessage" v-if="email !== ''">
+      {{verifyEmail}}
     </div>
     <div class="container-pw">
       <input type="password" v-model="password" placeholder="Password">
@@ -32,10 +35,18 @@ export default {
   },
   computed: {
     error: function () {
-      if(this.password === this.password_confirm) {
+      if (this.password === this.password_confirm) {
         return 'Password Correct'
       } else {
         return 'Password Wrong!!'
+      }
+    },
+    verifyEmail: function () {
+      var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
+      if (this.email.match(regExp) !== null) {
+        return 'good'
+      } else {
+        return 'error'
       }
     }
   },
@@ -45,20 +56,9 @@ export default {
         alert('Login success')
       } else {
         alert('Login Fail')
-    }
-  },
-    verifyEmail: function () {
-      var emailVal = $("#email").val()
-      var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i
-      if(emailVal.match(regExp) !== null) {
-        return 'good'
-      } else {
-        return 'error'
       }
     }
-}
-
-
+  }
 }
 </script>
 
@@ -66,7 +66,7 @@ export default {
   .container-id, .container-pw, .container-pw-confirm, .container-button {
     padding: .5rem;
   }
-  .container-id input, .container-pw input, .container-pw-confirm input, .container-button {
+  .container-id input, .container-pw input, .container-pw-confirm input, .container-button button, .errormessage{
     padding: .5rem 1rem .5rem 1rem;
   }
 </style>
