@@ -23,11 +23,11 @@ export default {
   name: 'Yoon',
   data () {
     return {
-      email_: '',
-      password: '',
-      password_: '',
-      password_confirm: '',
-      email: ''
+      email_: 'ahnsh09',
+      password: '1111',
+      password_: '1111',
+      password_confirm: '1111',
+      email: 'ahnsh09'
     }
   },
   computed: {
@@ -44,9 +44,18 @@ export default {
       if (this.email === this.email_ && this.password === this.password_ === this.password_confirm) {
         alert('Login success')
       } else {
-      alert('Login Fail')
+        alert('Login Fail')
     }
-  }
+  },
+    verifyEmail: function () {
+      var emailVal = $("#email").val()
+      var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i
+      if(emailVal.match(regExp) !== null) {
+        return 'good'
+      } else {
+        return 'error'
+      }
+    }
 }
 
 
