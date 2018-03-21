@@ -19,10 +19,10 @@
             <div class="answer">
               <input type="email" name="email" placeholder="e-mail">
             </div>
-            <div class="answer">
+            <div class="answer1">
               <input type="password" name="password" placeholder="password">
             </div>
-            <div class="answer">
+            <div class="answer2">
               <button type="button"> sign in</button>
             </div>
           </div>
@@ -103,18 +103,7 @@ export default {
     padding-left: 15px;
   }
   .answer {
-    padding-top: .25rem;
-  }
-  .answer.email {
     display: block;
     width: 90%;
-    border-collapse: collapse;
-    background-color: #ededed;
-    font-size: 13px;
-    border-radius: 3px;
-    border: 1px solid #d8dbdb;
-    border-image: initial;
-    padding: 11px 0 12px 10px;
-    margin-top: 10px;
   }
 </style>
