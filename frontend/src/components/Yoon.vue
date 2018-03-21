@@ -37,20 +37,11 @@
       <div class="container-low">
       </div>
       </div>
-    </div>
-  </div>
-
+      </div>
 </template>
 
 <script>
 export default {
-  name: 'yoon',
-  data() {
-    return {
-      email: 'ahnsh09@naver.com',
-      password: '1111'
-    }
-  }
 }
 </script>
 
@@ -58,14 +49,72 @@ export default {
   .container {
     z-index: 1;
     display: black;
-    width: 90%;
+    float: left;
+    width: 33%;
     color: #000;
   }
-  .container-high {
+  .container-high, .container-middle {
     margin: 0;
     background-color: #e0e2e3;
     padding: .75rem;
     max-width: 100%;
     border-radius: .4rem .4rem 0 0;
+  }
+  .container-question row {
+    margin: 0;
+    background-color: #e0e2e3;
+    padding: .75rem;
+    max-width: 100%;
+    border-radius: .4rem .4rem 0 0;
+  }
+  .high-left-question {
+    font-size: 1.5rem;
+    max-width: 20%;
+    width: 100%;
+    min-height: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    width: 15%;
+  }
+  .mid-left-answer {
+    font-size: 1.5rem;
+    max-width: 20%;
+    width: 100%;
+    min-height: 5px;
+    padding-right: 10px;
+    float: left;
+    width: 15%;
+  }
+  .high-center-question {
+    font-size: 1.5rem;
+    max-width: 100%;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .mid-center-item {
+    display: block;
+    width: 90;
+    border-collapse: collapse;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .answer {
+    padding-top: .25rem;
+  }
+  .email {
+    display: block;
+    width: 90%;
+    border-collapse: collapse;
+    background-color: #ededed;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #d8dbdb;
+    border-image: initial;
+    padding: 11px 0 12px 10px;
+    margin-top: 10px;
   }
 </style>
