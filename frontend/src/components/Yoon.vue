@@ -105,7 +105,7 @@ export default {
   .answer {
     padding-top: .25rem;
   }
-  .email {
+  .answer.email {
     display: block;
     width: 90%;
     border-collapse: collapse;
