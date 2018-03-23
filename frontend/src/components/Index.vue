@@ -1,86 +1,15 @@
 <template>
-  <div class="hello">
-    <img src="../assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+  <div class="index">
+    <div class="c1">
+    </div>
+    <div class="c2">
+    </div>
+    <div class="c3">
+    </div>
+    <div class="c4">
+    </div>
+    <div class="c5">
+    </div>
   </div>
 </template>
 
@@ -89,7 +18,6 @@ export default {
   name: 'Index',
   data () {
     return {
-      msg: 'Hello Todd.'
     }
   }
 }
@@ -97,18 +25,62 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .index {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  .index div {
+    box-sizing: border-box;
+    min-height: 150px;
+    min-width: 150px;
+  }
+
+  .c1, .c2, .c3, .c4, .c5 {
+    width: 100%;
+    background-color: #000
+  }
+
+  .c1 {
+    background-color: #1d4586;
+  }
+  .c2 {
+    background-color: #3c77d9;
+  }
+  .c3 {
+    background-color: #cadaf8;
+  }
+  .c4 {
+    background-color: #d6dff0;
+  }
+  .c5 {
+    background-color: #dfe1e6;
+  }
+  @media (min-width: 600px) {
+    .c2, .c3, .c4, .c5 {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .c1 {
+      width: 60%;
+    }
+    .c2 {
+      width: 40%;
+    }
+    .c3, .c4, .c5 {
+      width: 33.33%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .container {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 </style>
