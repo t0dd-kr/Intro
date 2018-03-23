@@ -2,10 +2,10 @@
   <div class="container">
     <div class="yoon">
       <div class="container-high">
-        <div class="container-question row">
+        <div class="container-question-row">
           <div class="high-left-question">
             Q.
-          </div>
+        </div>
           <div class="high-center-question">
           What's your e-mail and password?
         </div>
@@ -17,19 +17,22 @@
         <div class="mid-center-item">
           <div class="col">
             <div class="answer">
-              <input type="email" name="email" placeholder="e-mail">
+              <input type="email" class="email" name="email" placeholder="e-mail">
             </div>
             <div class="answer1">
-              <input type="password" name="password" placeholder="password">
+              <input type="password" class="password" name="password" placeholder="password">
             </div>
             <div class="answer2">
-              <button type="button"> sign in</button>
+              <div class="button-1">
+                <div class="eff-1"></div>
+                <a href="#"> Touch me </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container-low">
-        <div class="error-notice low">
+        <div class="error-notice-low">
           0 error occured
         </div>
       </div>
@@ -47,63 +50,100 @@ export default {
 
 <style scoped>
   .container {
-    z-index: 1;
-    display: black;
-    float: left;
-    width: 33%;
+    width: 40%;
     color: #000;
+    background-color: rgb(224, 226, 227);
+    border-radius: 0.3rem;
+
   }
-  .container-high, .container-middle {
-    margin: 0;
-    background-color: #e0e2e3;
+  .container-middle {
+    background-color: rgb(255, 255, 255);
     padding: .75rem;
-    max-width: 100%;
-    border-radius: .4rem .4rem 0 0;
   }
-  .container-question row {
-    margin: 0;
-    background-color: #e0e2e3;
+  .container-question-row {
     padding: .75rem;
+    margin: 0;
     max-width: 100%;
-    border-radius: .4rem .4rem 0 0;
   }
   .high-left-question {
-    font-size: 1.5rem;
-    max-width: 20%;
-    width: 100%;
-    min-height: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: block;
     float: left;
-    width: 15%;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    font-size: 1.5rem;
+    line-height: 0.9em;
+
   }
   .mid-left-answer {
-    font-size: 1.5rem;
-    max-width: 20%;
-    width: 100%;
-    min-height: 5px;
-    padding-right: 10px;
+
     float: left;
-    width: 15%;
-  }
-  .high-center-question {
+    padding-right: 1rem;
+    padding-top: 0rem;
     font-size: 1.5rem;
-    max-width: 100%;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+    line-height: 3em;
+}
   .mid-center-item {
-    display: block;
-    width: 90;
-    border-collapse: collapse;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-left: 10%;
+}
+
+  .high-center-question {
+    font-size: 1rem;
   }
-  .answer {
-    display: block;
-    width: 90%;
+  .container-low {
+    padding-left: 7rem;
+    background-color: rgb(255, 224, 224);
+    border-bottom-right-radius: 0.24rem;
+    border-bottom-left-radius: 0.24rem;
+}
+  .button-1{
+  width:100%;
+  height:40px;
+  border:2px solid #34495e;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 5px 0;
+}
+.button-1 a{
+  font-family:arial;
+  font-size:18px;
+  color:#34495e;
+  text-decoration:none;
+  line-height:36px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-1{
+  width:100%;
+  height:50px;
+  top:-2px;
+  right:100%;
+  background:#34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
   }
+  .button-1:hover .eff-1{
+    right:0;
+  }
+  .button-1:hover a{
+    color:#fff;
+  }
+  .email {
+
+    width: 98%;
+    height: 2rem;
+    background-color: #e9e9e9;
+    border-radius: 0.3rem;
+  }
+  .password {
+    width: 98%;
+    height: 2rem;
+    background-color: #e9e9e9;
+    border-radius: 0.3rem;
+  }
+
 </style>
