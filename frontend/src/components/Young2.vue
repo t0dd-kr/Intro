@@ -80,4 +80,12 @@ export default {
       width: 20%
     }
   }
+
+  @media (min-width: 800px) {
+    .window_tile {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 </style>
