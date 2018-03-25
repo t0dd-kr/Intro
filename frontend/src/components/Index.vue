@@ -62,6 +62,9 @@ export default {
     .c2, .c3, .c4, .c5 {
       width: 50%;
     }
+    .c2 {
+      background-color: rgba(255, 0, 0, 0.2);
+    }
   }
 
   @media (min-width: 800px) {
@@ -69,7 +72,7 @@ export default {
       width: 60%;
     }
     .c2 {
-      width: 40%;
+      width: 50%;
     }
     .c3, .c4, .c5 {
       width: 33.33%;
