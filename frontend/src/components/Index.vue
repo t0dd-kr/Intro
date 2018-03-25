@@ -40,7 +40,6 @@ export default {
 
   .c1, .c2, .c3, .c4, .c5 {
     width: 100%;
-    background-color: #000
   }
 
   .c1 {
@@ -77,7 +76,7 @@ export default {
   }
 
   @media (min-width: 800px) {
-    .container {
+    .index {
       width: 800px;
       margin-left: auto;
       margin-right: auto;
