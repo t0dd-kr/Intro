@@ -4,9 +4,11 @@
     </div>
     <div class="ex2">
     </div>
-    <div class="ex3">
-    </div>
-    <div class="ex4">
+    <div class="box">
+      <div class="ex3">
+      </div>
+      <div class="ex4">
+      </div>
     </div>
     <div class="ex5">
     </div>
@@ -21,7 +23,7 @@ export default {
 
 <style scoped>
 
-  .ex{
+  .ex {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -32,7 +34,7 @@ export default {
     min-height: 150px;
     min-width: 150px;
   }
-  .ex1, .ex2, .ex3, .ex4, .ex5, .ex6{
+  .ex1, .ex2, .ex3, .ex4, .ex5 {
     width: 100%;
   }
   .ex1 {
@@ -50,7 +52,29 @@ export default {
   .ex5 {
     background-color: #dfe1e6;
   }
-  .ex6 {
-    background-color: ;
+  @media (min-width: 600px) {
+    .ex1, .ex2, .ex3, .ex4, .ex5 {
+      width: 100%;
+    }
+  }
+  @media (min-width: 600px) {
+    .c1 {
+      width: 100%;
+    }
+    .c2 {
+      width: 20%;
+    }
+    .box {
+      width: 80%;
+    }
+
+  }
+
+  @media (min-width: 800px) {
+    .index {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 </style>
