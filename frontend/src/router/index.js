@@ -34,7 +34,7 @@ export default new Router({
     {
       path: '/yoon2',
       name: 'Yoon2',
-      component: yoon2
+      component: Yoon2
     }
   ]
 })
