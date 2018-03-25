@@ -4,6 +4,7 @@ import Index from '@/components/Index'
 import Login from '@/components/Login'
 import Yoon from '@/components/Yoon'
 import Young from '@/components/Young'
+import Yoon2 from '@/components/Yoon2'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/young',
       name: 'Young',
       component: Young
+    },
+    {
+      path: '/yoon2',
+      name: 'Yoon2',
+      component: yoon2
     }
   ]
 })
