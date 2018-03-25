@@ -69,7 +69,7 @@ export default {
       background-color : #cd9cf2;
     }
     .tile2 {
-      background-color: #f6f3ff; 
+      background-color: #f6f3ff;
     }
   }
 </style>

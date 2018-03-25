@@ -30,7 +30,7 @@ export default new Router({
     {
       path: '/yoon2',
       name: 'Yoon2',
-      component: yoon2
+      component: Yoon2
     },
     {
       path: '/young',
@@ -38,7 +38,7 @@ export default new Router({
       component: Young
     },
     {
-      path: '/young',
+      path: '/young2',
       name: 'Young2',
       component: Young2
     }
