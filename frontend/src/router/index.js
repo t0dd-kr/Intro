@@ -24,8 +24,7 @@ export default new Router({
       path: '/yoon',
       name: 'Yoon',
       component: Yoon
-    }
-    ,
+    },
     {
       path: '/young',
       name: 'Young',
