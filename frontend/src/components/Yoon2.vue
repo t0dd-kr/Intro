@@ -34,7 +34,7 @@ export default {
     min-height: 150px;
     min-width: 150px;
   }
-  .ex1, .ex2, .ex3, .ex4, .ex5 {
+  .ex1, .ex2, .ex3, .ex4, .ex5, .box {
     width: 100%;
   }
   .ex1 {
@@ -53,11 +53,14 @@ export default {
     background-color: #dfe1e6;
   }
   @media (min-width: 600px) {
-    .ex1, .ex2, .ex3, .ex4, .ex5 {
-      width: 100%;
+    .ex2 {
+      width: 20%;
+    }
+    .box {
+      width: 80%;
     }
   }
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     .ex1 {
       width: 100%;
     }
@@ -65,16 +68,11 @@ export default {
       width: 20%;
     }
     .box {
-      width: 80%;
+      width: 60%;
     }
-
-  }
-
-  @media (min-width: 800px) {
-    .index {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+    .ex5 {
+      width: 20%;
     }
   }
+
 </style>
