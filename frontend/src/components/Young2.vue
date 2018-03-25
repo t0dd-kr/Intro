@@ -80,6 +80,4 @@ export default {
       width: 20%
     }
   }
-
-
 </style>
