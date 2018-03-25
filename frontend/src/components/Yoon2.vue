@@ -58,10 +58,10 @@ export default {
     }
   }
   @media (min-width: 600px) {
-    .c1 {
+    .ex1 {
       width: 100%;
     }
-    .c2 {
+    .ex2 {
       width: 20%;
     }
     .box {
