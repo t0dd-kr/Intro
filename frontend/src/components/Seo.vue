@@ -6,10 +6,6 @@
     </div>
     <div class="s3">
       <div class="s3-1">
-        <div class="s3-1_1">
-        </div>
-        <div class="s3-1_2">
-        </div>
       </div>
       <div class="s3-2">
       </div>
@@ -18,22 +14,26 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+}
+</script>
 
 <style scoped>
-  .index {
+  .seo {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
   }
 
-  .index div {
+  .seo div {
     box-sizing: border-box;
     min-height: 150px;
     min-width: 150px;
   }
 
-  .s1, .s2, .s3, .s3-1, .s3-1_1, .s3-1_2, .s3-2, .s4 {
+  .s1, .s2, .s3, .s3-1, .s3-2, .s4 {
     width: 100%;
   }
 
@@ -43,10 +43,7 @@
   .s2 {
     background-color: #3c77d9;
   }
-  .s3-1_1 {
-    background-color: #cadaf8;
-  }
-  .s3-1_2 {
+  .s3-1 {
     background-color: #cadaf8;
   }
   .s3-2 {
@@ -69,11 +66,8 @@
     .s2 {
       width: 30%;
     }
-    .s3-1 {
+    .s3 {
       width: 70%;
-    }
-    .s3-2 {
-      width: 100%;
     }
     .s4 {
       width :100%;

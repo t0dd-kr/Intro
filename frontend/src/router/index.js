@@ -6,7 +6,7 @@ import Yoon from '@/components/Yoon'
 import Yoon2 from '@/components/Yoon2'
 import Young from '@/components/Young'
 import Young2 from '@/components/Young2'
-
+import Seo from '@/components/seo'
 Vue.use(Router)
 
 export default new Router({
@@ -41,6 +41,11 @@ export default new Router({
       path: '/young2',
       name: 'Young2',
       component: Young2
+    },
+    {
+      path: '/seo',
+      name: 'Seo',
+      component: Seo
     }
   ]
 })
