@@ -17,7 +17,6 @@
     <div class="tile4">
       tile4
     </div>
-    <div class="w3-container w3-center w3-animate-bottom">testeste</div>
   </div>
 </template>
 
