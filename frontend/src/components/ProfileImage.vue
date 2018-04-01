@@ -1,11 +1,11 @@
 <template>
   <div class="container-profile-image">
-    <a href="javascript:loadImg();">
-      <div class="profile-image">
-        <img src="../assets/profile.png" alt="" width="200px" height="200px"/>
-        <input type="file" accept="image/*"/>
-      </div>
-    </a>
+    <div class="profile-image">
+      <label for="imgFile">
+        <img src="../assets/profile_temp.png" alt="" width="300px" height="300px"/>
+      </label>
+      <input type="file" id="imgFile" accept="image/*" @change="readURL"/>
+    </div>
   </div>
 </template>
 
@@ -17,20 +17,33 @@ export default {
     }
   },
   methods: {
-    loadImg: function () {
+    readURL: function (event) {
+      var input = event.target
+      if (input.files && input.files[0]) {
+        var reader = new FileReader()
+        reader.onload = function (e) {
+          document.getElementsByTagName('img')[0].setAttribute('src', e.target.result)
+        }
+        reader.readAsDataURL(input.files[0])
+      }
     }
   }
 }
 </script>
 
 <style scoped>
-  .container-profile-image, .profile-image, a {
+  .container-profile-image, .profile-image, a, input {
     padding: 0;
     margin: 0;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
-  input {
+  img {
+    background-image: url('../assets/profile_edit.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  input[type="file"] {
     display: none;
   }
 </style>
