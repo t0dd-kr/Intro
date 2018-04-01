@@ -25,7 +25,7 @@
       <SoundCloudBox/>
     </div>
     <div class="container">
-      <Imagepreview/>
+      <ImagePreview/>
     </div>
   </div>
 </template>
