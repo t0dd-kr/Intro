@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  .chatbox{
+  .chatbox {
     width: 4rem;
   }
   .mychat {
@@ -26,8 +26,9 @@ export default {
       height: 7rem;
       width: 10rem;
       margin: 1rem;
-      border-radius: 10px;
+      border-radius: 0.5rem;
       margin-left: 5rem;
+      padding: 1rem;
   }
   .mychat::after {
       content: '';
@@ -58,7 +59,8 @@ export default {
       height: 7rem;
       width: 10rem;
       margin: 1rem;
-      border-radius: 10px;
+      border-radius: 0.5rem;
+      padding: 1rem;
   }
 .yourchat::after {
     content: '';
