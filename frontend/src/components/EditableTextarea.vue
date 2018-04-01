@@ -24,7 +24,35 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.editable-textarea {
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  display: block;
   width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  background-color: rgb(237, 237, 237);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  height: 45px;
+  padding: 11px 0px 12px 10px;
+  word-wrap: break-word;
+}
+textarea:focus {
+  outline: solid 1px #CCCCCC;
+}
+.container-editable-textarea {
+  width: 100%;
+}
+.editable-textarea {
+  overflow: hidden;
+  transition: background-color .25s;
+  font-size: 1rem;
+}
+.editable-textarea:focus {
+  background-color: #EDEDED;
+  border: none;
 }
 </style>
