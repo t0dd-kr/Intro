@@ -19,11 +19,19 @@
 </template>
 
 <script>
+import Textbox from './Textbox'
+import Button from './Button'
+import Chatbox from './Chatbox'
+import ResizableTextarea from './ResizableTextarea'
+import EditableTextarea from './EditableTextarea'
 export default {
   name: 'Index',
   data () {
     return {
     }
+  },
+  components: {
+    Textbox, Button, Chatbox, ResizableTextarea, EditableTextarea
   }
 }
 </script>

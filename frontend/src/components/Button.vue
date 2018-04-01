@@ -10,8 +10,9 @@ export default {
 </script>
 
 <style scoped>
-  .button {
+  .Button {
     width: 100%;
     height: 1.5rem;
     padding: .5rem 1.5rem .5rem 5rem;
+  }
 </style>
