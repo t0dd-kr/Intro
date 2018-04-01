@@ -17,10 +17,11 @@ export default {
     background-color: #ccc;
     border-radius: 0.5rem;
     border: none;
+    outline: none;
   }
   .button input:active{
     position: relative;
-    top: 2px;
     background-color: #999;
+    outline: none;
   }
 </style>
