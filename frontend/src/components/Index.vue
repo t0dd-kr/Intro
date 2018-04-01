@@ -9,6 +9,12 @@
     <div class="container">
       <Chatbox/>
     </div>
+    <div class="container">
+      <ResizableTextbox/>
+    </div>
+    <div class="container">
+      <EditableTextarea/>
+    </div>
   </div>
 </template>
 
