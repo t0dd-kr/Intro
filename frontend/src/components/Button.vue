@@ -22,5 +22,6 @@ export default {
     position: relative;
     top: 2px;
     background-color: #999;
+    outline: none;
   }
 </style>
