@@ -17,34 +17,69 @@ export default {
 
 <style scoped>
   .chatbox{
-    width: 2rem;
+    width: 4rem;
   }
   .mychat {
-    position: relative;
-    background: #88b7d5;
-    border: 4px solid #caeaff;
+      display: inline-block;
+      position: relative;
+      background: #94c1f7;
+      height: 7rem;
+      width: 10rem;
+      margin: 1rem;
+      border-radius: 10px;
+      margin-left: 5rem;
   }
-  .arrow_box:after, .arrow_box:before {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
+  .mychat::after {
+      content: '';
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      z-index: -1;
+      background: #fff;
+      bottom: -20px;
+      left: 8.5rem;
+  }
+  .mychat::before {
+      content: '';
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      z-index: -1;
+      background: #94c1f7;
+      bottom: -15px;
+      left: 7.5rem;
+  }
+  .yourchat {
+      display: inline-block;
+      position: relative;
+      background: #efabe2;
+      height: 7rem;
+      width: 10rem;
+      margin: 1rem;
+      border-radius: 10px;
+  }
+.yourchat::after {
+    content: '';
     position: absolute;
-    pointer-events: none;
-  }
-
-  .arrow_box:after {
-    border-color: rgba(136, 183, 213, 0);
-    border-top-color: #88b7d5;
-    border-width: 30px;
-    margin-left: -30px;
-  }
-  .arrow_box:before {
-    border-color: rgba(202, 234, 255, 0);
-    border-top-color: #caeaff;
-    border-width: 36px;
-    margin-left: -36px;
-  }
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    z-index: -1;
+    background: #fff;
+    bottom: -20px;
+    left: -1.5rem;
+}
+.yourchat::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    z-index: -1;
+    background: #efabe2;
+    bottom: -15px;
+    left: -0.5rem;
+}
 </style>
