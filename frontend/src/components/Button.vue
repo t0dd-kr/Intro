@@ -12,8 +12,8 @@ export default {
 <style scoped>
   .button input {
     width: 100%;
-    padding: 2rem;
-    font-size: 1.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
     background-color: #ccc;
     border-radius: 0.5rem;
     border: none;
