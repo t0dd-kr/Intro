@@ -12,7 +12,7 @@ export default {
 <style scoped>
   .button input{
     width: 100%;
-    height: 2.5rem;
+    height: 39px;
     font-size: 1rem;
     background-color: #ccc;
     border-radius: 0.5rem;

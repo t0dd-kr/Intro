@@ -24,13 +24,13 @@ export default {
 </script>
 
 <style scoped>
-  .container-profile-image {
-    width: 100%;
-  }
-  .profile-image, a {
+  .container-profile-image, .profile-image, a {
     padding: 0;
     margin: 0;
     width: 200px;
     height: 200px;
+  }
+  input {
+    display: none;
   }
 </style>
