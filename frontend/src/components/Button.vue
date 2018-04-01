@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="button">
-    <input type="button" value="login" v-on:click="login">
+    <input type="button" value="login">
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
 </script>
 
 <style scoped>
-  .button input {
+  .button input{
     width: 100%;
     height: 2.5rem;
     font-size: 1rem;
@@ -18,11 +18,9 @@ export default {
     border-radius: 0.5rem;
     border: none;
   }
-  .button input:active {
+  .button input:active{
     position: relative;
     top: 2px;
     background-color: #999;
   }
-
-
 </style>
