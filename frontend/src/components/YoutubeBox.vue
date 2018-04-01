@@ -1,6 +1,7 @@
 <template>
-  <div class="youtubeDiv">
+  <div class="container-youtube-box">
     <iframe
+      class="youtube-box"
       width="300"
       height="300"
       src="https://www.youtube.com/embed/ReFXt08VPFg"
@@ -15,6 +16,8 @@ export default {
 }
 </script>
 <style scoped>
-  .youtubeDiv iframe{
+  .container-youtube-box {
+    width: 300px;
+    height: 300px;
   }
 </style>
