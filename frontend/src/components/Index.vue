@@ -1,16 +1,13 @@
 <template>
   <div class="index">
-    <div class="c1">
+    <div class="container">
+      <Textbox/>
     </div>
-    <div class="c2">
+    <div class="container">
+      <Button/>
     </div>
-    <div class="test">
-      <div class="c3">
-      </div>
-      <div class="c4">
-      </div>
-    </div>
-    <div class="c5">
+    <div class="container">
+      <Chatbox/>
     </div>
   </div>
 </template>
@@ -33,58 +30,8 @@ export default {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
   }
-
-  .index div {
-    box-sizing: border-box;
-    min-height: 150px;
-    min-width: 150px;
-  }
-
-  .c1, .c2, .c3, .c4, .c5 {
-    width: 100%;
-  }
-
-  .c1 {
-    background-color: #1d4586;
-  }
-  .c2 {
-    background-color: #3c77d9;
-  }
-  .c3 {
-    background-color: #cadaf8;
-  }
-  .c4 {
-    background-color: #d6dff0;
-  }
-  .c5 {
-    background-color: #dfe1e6;
-  }
-  @media (min-width: 600px) {
-    .c2, .c3, .c4, .c5 {
-      width: 50%;
-    }
-    .c2 {
-      background-color: rgba(255, 0, 0, 0.2);
-    }
-  }
-
-  @media (min-width: 800px) {
-    .c1 {
-      width: 60%;
-    }
-    .c2 {
-      width: 50%;
-    }
-    .c3, .c4, .c5 {
-      width: 33.33%;
-    }
-  }
-
-  @media (min-width: 800px) {
-    .index {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .container {
+    width:100%;
+    min-height: 300px;
   }
 </style>
