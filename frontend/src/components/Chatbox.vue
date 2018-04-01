@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  .chatbox {
+  .chatbox{
     width: 4rem;
   }
   .mychat {
@@ -39,7 +39,7 @@ export default {
       z-index: -1;
       background: #fff;
       bottom: -20px;
-      left: 8.5rem;
+      left: 10rem;
   }
   .mychat::before {
       content: '';
@@ -50,7 +50,7 @@ export default {
       z-index: -1;
       background: #94c1f7;
       bottom: -15px;
-      left: 7.5rem;
+      left: 9rem;
   }
   .yourchat {
       display: inline-block;
