@@ -1,11 +1,16 @@
 <template>
   <div class="textbox">
-      <input v-bind:type="textType" placeholder="입력하세요">
+      <input v-bind:type="textType" placeholder="Textbox">
   </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      textType: 'text'
+    }
+  }
 }
 </script>
 
