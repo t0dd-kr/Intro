@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-  .container-soundcloud-box iframe{
+  .container-soundcloud-box {
     height: 300px;
     width: 300px;
   }
