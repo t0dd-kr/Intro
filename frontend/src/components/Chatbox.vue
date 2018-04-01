@@ -1,9 +1,9 @@
 <template lang="html">
-  <div class="Chatbox">
-    <div class="Mychat">
+  <div class="chatbox">
+    <div class="mychat">
       test-mychat
     </div>
-    <div class="Yourchat">
+    <div class="yourchat">
       test-yourchat
     </div>
   </div>
@@ -16,7 +16,10 @@ export default {
 </script>
 
 <style scoped>
-  .arrow_box {
+  .chatbox{
+    width: 2rem;
+  }
+  .mychat {
     position: relative;
     background: #88b7d5;
     border: 4px solid #caeaff;
