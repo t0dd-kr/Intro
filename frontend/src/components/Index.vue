@@ -10,7 +10,7 @@
       <Chatbox/>
     </div>
     <div class="container">
-      <ResizableTextbox/>
+      <ResizableTextarea/>
     </div>
     <div class="container">
       <EditableTextarea/>
