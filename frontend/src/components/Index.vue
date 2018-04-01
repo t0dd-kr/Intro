@@ -21,6 +21,9 @@
     <div class="container">
       <YoutubeBox/>
     </div>
+    <div class="container">
+      <SoundCloudBox/>
+    </div>
   </div>
 </template>
 
@@ -32,6 +35,7 @@ import ResizableTextarea from './ResizableTextarea'
 import EditableTextarea from './EditableTextarea'
 import ProfileImage from './ProfileImage'
 import YoutubeBox from './YoutubeBox'
+import SoundCloudBox from './SoundCloudBox'
 export default {
   name: 'Index',
   data () {
@@ -39,7 +43,7 @@ export default {
     }
   },
   components: {
-    Textbox, Button, Chatbox, ResizableTextarea, EditableTextarea, ProfileImage, YoutubeBox
+    Textbox, Button, Chatbox, ResizableTextarea, EditableTextarea, ProfileImage, YoutubeBox, SoundCloudBox
   }
 }
 </script>
