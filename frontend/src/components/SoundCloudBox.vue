@@ -1,9 +1,11 @@
 <template lang="html">
-  <div class="soundcloudbox">
+  <div class="container-soundcloud-box">
     <iframe
-    src="https://soundcloud.com/revsnjps0ny2/sets/emhrwp38lool"
-    height="300"
-    width="300">
+      src="https://soundcloud.com/revsnjps0ny2/sets/emhrwp38lool"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      height="300px"
+      width="300px">
     </iframe>
   </div>
 </template>
@@ -14,10 +16,8 @@ export default {
 </script>
 
 <style scoped>
-  .soundcloudbox iframe{
+  .container-soundcloud-box iframe{
     height: 300px;
     width: 300px;
-
-
   }
 </style>
