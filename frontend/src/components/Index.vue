@@ -15,6 +15,9 @@
     <div class="container">
       <EditableTextarea/>
     </div>
+    <div class="container">
+      <ProfileImage/>
+    </div>
   </div>
 </template>
 
@@ -24,6 +27,7 @@ import Button from './Button'
 import Chatbox from './Chatbox'
 import ResizableTextarea from './ResizableTextarea'
 import EditableTextarea from './EditableTextarea'
+import ProfileImage from './ProfileImage'
 export default {
   name: 'Index',
   data () {
@@ -31,7 +35,7 @@ export default {
     }
   },
   components: {
-    Textbox, Button, Chatbox, ResizableTextarea, EditableTextarea
+    Textbox, Button, Chatbox, ResizableTextarea, EditableTextarea, ProfileImage
   }
 }
 </script>

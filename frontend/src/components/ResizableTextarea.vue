@@ -58,7 +58,7 @@ textarea {
   font-size: 1rem;
   border-radius: 0.5rem;
   border: none;
-  height: 45px;
+  height: 39px;
   padding: 11px 0px 12px 10px;
   word-wrap: break-word;
 }
