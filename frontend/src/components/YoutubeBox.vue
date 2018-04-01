@@ -16,7 +16,11 @@ export default {
 }
 </script>
 <style scoped>
+<<<<<<< HEAD
+  .youtubeDiv iframe{
+=======
   .container-youtube-box {
+>>>>>>> b6005d3256d26d2b4421276ec367d8f062fb5d05
     width: 300px;
     height: 300px;
   }
