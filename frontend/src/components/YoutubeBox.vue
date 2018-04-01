@@ -16,5 +16,7 @@ export default {
 </script>
 <style scoped>
   .youtubeDiv iframe{
+    width: 300px;
+    height: 300px;
   }
 </style>
