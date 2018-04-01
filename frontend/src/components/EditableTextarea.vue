@@ -3,11 +3,9 @@
     <textarea
       class="editable-textarea"
       rows="1"
-      placeholder="EditableTextarea"
+      placeholder="editableTextarea"
       v-on:keydown="autoSize($event)"
-      v-on:blur="onBlurDetail($event)"
-      v-on:focus="onFocus($event, index)"
-      v-model="answer.detail"
+      v-on:blur="onBlur($event)"
     />
   </div>
 </template>
@@ -17,6 +15,31 @@ export default {
   name: 'EditableTextarea',
   data () {
     return {
+      enterAble: true
+    }
+  },
+  methods: {
+    autoSize: function (event) {
+      var el = event.target
+      if (event.keyCode === 13) {
+        if (!this.enterAble) {
+          event.preventDefault()
+          el.blur()
+        }
+      }
+      setTimeout(function () {
+        el.style.cssText = 'height:auto; padding:0'
+        // for box-sizing other than "content-box" use:
+        // el.style.cssText = '-moz-box-sizing:content-box';
+        el.style.cssText = 'height:' + (el.scrollHeight + 21) + 'px'
+      }, 0)
+    },
+    onBlur: function (event) {
+      var el = event.target
+      while (el.value[el.value.length - 1] === '\n') {
+        el.value = el.value.slice(0, -1)
+        this.autoSize(event)
+      }
     }
   }
 }
@@ -41,12 +64,13 @@ textarea {
   word-wrap: break-word;
 }
 textarea:focus {
-  outline: solid 1px #CCCCCC;
+  outline: solid 1px #CCC;
 }
 .container-editable-textarea {
   width: 100%;
 }
 .editable-textarea {
+  background-color: #FFF;
   overflow: hidden;
   transition: background-color .25s;
   font-size: 1rem;
