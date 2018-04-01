@@ -15,6 +15,9 @@
     <div class="container">
       <EditableTextarea/>
     </div>
+    <div class="container">
+      <ProfileImage/>
+    </div>
   </div>
 </template>
 
