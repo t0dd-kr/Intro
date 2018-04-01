@@ -18,6 +18,9 @@
     <div class="container">
       <ProfileImage/>
     </div>
+    <div class="container">
+      <YoutubeBox/>
+    </div>
   </div>
 </template>
 
@@ -28,6 +31,7 @@ import Chatbox from './Chatbox'
 import ResizableTextarea from './ResizableTextarea'
 import EditableTextarea from './EditableTextarea'
 import ProfileImage from './ProfileImage'
+import YoutubeBox from './YoutubeBox'
 export default {
   name: 'Index',
   data () {
@@ -35,7 +39,7 @@ export default {
     }
   },
   components: {
-    Textbox, Button, Chatbox, ResizableTextarea, EditableTextarea, ProfileImage
+    Textbox, Button, Chatbox, ResizableTextarea, EditableTextarea, ProfileImage, YoutubeBox
   }
 }
 </script>
