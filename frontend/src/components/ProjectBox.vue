@@ -20,21 +20,21 @@ export default {
 
 <style scoped>
   .projectBox{
-    position: absolute;
-    height: 200px;
-    width : 300px;
+    height: 280px;
+    width : 330px;
+    box-shadow: 0px 5px 5px 0px;
+    overflow: auto;
   }
 
   .projectBox .projectPicture{
     /* display: inline-block; */
     width : 100%;
-    height: 180px;
+    height: 230px;
     margin-top: 0px;
     text-align:center;
     vertical-align: middle;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/VitalikButerinProfile.jpg/500px-VitalikButerinProfile.jpg");
     background-size: cover;
-
   }
   .projectBox .projectPicture img{
     position: relative;
@@ -45,6 +45,7 @@ export default {
   .projectBox .projectExplain{
     display: block;
     text-align: center;
+    overflow: auto;
   }
   .projectBox .projectExplain p{
     display: block;
