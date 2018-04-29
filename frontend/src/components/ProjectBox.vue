@@ -6,8 +6,7 @@
     </div>
     <!-- 프로젝트 내부 설명 글  -->
     <div class="projectExplain">
-      <p>비탈릭 부테린</p>
-      <p>이더리움 프로젝트</p>
+
     </div>
 
   </div>
@@ -22,7 +21,7 @@ export default {
   .projectBox{
     height: 280px;
     width : 330px;
-    box-shadow: 0px 5px 5px 0px;
+    box-shadow: 0 10px 20px 0 rgb(150,150,150);
     overflow: auto;
   }
 
@@ -46,9 +45,5 @@ export default {
     display: block;
     text-align: center;
     overflow: auto;
-  }
-  .projectBox .projectExplain p{
-    display: block;
-    margin: 2px 0px 2px 0px;
   }
 </style>
