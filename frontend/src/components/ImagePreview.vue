@@ -14,7 +14,7 @@ export default {
   data () {
 
   },
-  methods:{
+  methods: {
     activeTransition: function (selector, name, index) {
       if (window.$(selector).hasClass(name) === false) {
         window.$(selector).addClass(name)
@@ -25,8 +25,7 @@ export default {
         window.$(selector).removeClass(name)
       }
     }
-}
-
+  }
 }
 </script>
 
