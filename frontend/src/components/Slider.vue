@@ -56,7 +56,6 @@ export default{
 <style scoped>
   .body {
     background-color:
-
   }
   .button {
     display: inline-flex;
@@ -80,7 +79,8 @@ export default{
     display: inline-flex;
     width: 300px;
     height: 300px;
-    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
   .slide > div:nth-child(1) {
     background-image: url('http://cphoto.asiae.co.kr/listimglink/6/2017053018525594445_1.jpg');
