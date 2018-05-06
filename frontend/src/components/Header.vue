@@ -5,13 +5,20 @@
         <input type="text" placeholder="검색">
         <img src="../assets/search.svg" onclick="">
       </div>
+
       <div class="name">
-        <img src="../assets/header_logo.png" alt="">
+        <img src="../assets/header_logo.png">
       </div>
-        <div class="btn-join">
-          <a href="./login">로그인</a>
-          <a href="#" style="border-style: solid; border-width: 1px; padding : 5px 8px 3px 8px ;border-radius: 4px; margin-left: 10px ;">회원가입</a>
+
+        <div class="button">
+          <div class="login-button">
+            <a href="#">로그인</a>
+          </div>
+          <div class="join-button">
+            <a href="#">회원가입</a>
+          </div>
         </div>
+
     </div>
   </div>
 </template>
@@ -30,16 +37,19 @@ export default {
     height : 60px;
   }
   .responsive-container{
+    position: relative;
     margin: auto;
     width: 1200px;
     text-align: center;
-    vertical-align: middle;
+    top : 15px;
   }
   .search-box{
+    position: absolute;
     display: inline-flex;
     float: left;
-    margin-left: 60px;
-    margin-top: 13px;
+
+    left: 50px;
+
   }
   .search-box input{
     height: 30px;
@@ -58,20 +68,32 @@ export default {
   }
   .name{
     display: inline-block;
-    margin-top: 5px;
+    top: 20px;
   }
-  .name img{
-    margin-top: 8px;
-  }
-  .btn-join{
-    float: right;
-    margin-top: 22px;
-    margin-right: 60px;
+
+  .button{
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top : 8px;
     font-size: 16px;
   }
-  .btn-join a{
+  .login-button, .join-button{
+    text-decoration: none;
+    color: white;
+    display: inline;
+  }
+  .login-button{
+    margin-right: 15px;
+  }
+  .join-button{
+    border-style: solid;
+    border-width: 1px;
+    padding : 5px 8px 3px 8px ;
+    border-radius: 4px;
+  }
+  a{
     text-decoration: none;
     color: white;
   }
-
 </style>
